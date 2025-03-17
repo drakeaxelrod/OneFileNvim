@@ -1,3 +1,15 @@
+--[[
+Uses Curl and Github hosted file to initialize the neovim
+add the following to your $HOME/.config/nvim/init.lua:
+```lua
+pcall(load(vim.fn.system({ "curl", "-sL", "https://raw.githubusercontent.com/drakeaxelrod/OneFileNvim/refs/heads/main/init.lua" })))
+```
+or with wget
+```lua
+pcall(load(vim.fn.system({ "wget", "-qO-", "https://raw.githubusercontent.com/drakeaxelrod/OneFileNvim/refs/heads/main/init.lua" })))
+```
+]]
+
 ------------------------------------------------------------
 -- Options
 ------------------------------------------------------------
